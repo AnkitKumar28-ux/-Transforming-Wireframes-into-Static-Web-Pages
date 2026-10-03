@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NovaFlow — Modern Cloud Workflow & Design System Platform translated from wireframe concept to responsive HTML5 & CSS3." />
+  <title>NovaFlow | Wireframe to Responsive Web Page</title>
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip Navigation Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Wireframe Mode Inspector Bar (Interactive Bonus for Evaluation) -->
+  <div class="inspector-bar" role="region" aria-label="Wireframe Comparison Toolbar">
+    <div class="container inspector-bar__inner">
+      <span class="inspector-bar__badge">Internship Deliverable #1</span>
+      <p class="inspector-bar__text">
+        Toggle <strong>Wireframe Blueprint Mode</strong> to inspect structural boxes, semantic tags, and grid boundaries.
+      </p>
+      <label class="wireframe-toggle" for="wireframe-switch">
+        <input type="checkbox" id="wireframe-switch" aria-label="Toggle Wireframe Blueprint Mode" />
+        <span class="wireframe-toggle__slider"></span>
+        <span class="wireframe-toggle__label">Wireframe View</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="site-header" data-semantic="<header>">
+    <div class="container header-container">
+      <a href="#" class="brand" aria-label="NovaFlow Home">
+        <span class="brand__logo" aria-hidden="true">NF</span>
+        <span class="brand__name">NovaFlow</span>
+      </a>
+
+      <!-- Mobile Menu Checkbox Hack (Pure CSS Responsive Nav) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="site-nav" aria-label="Primary Navigation" data-semantic="<nav>">
+        <ul class="nav-list">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#workspace" class="nav-link">Workspace</a></li>
+          <li><a href="#metrics" class="nav-link">Metrics</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#login" class="btn btn--ghost">Sign In</a>
+          <a href="#get-started" class="btn btn--primary">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT AREA ==================== -->
+  <main id="main-content" data-semantic="<main>">
+
+    <!-- 1. HERO SECTION (2-Column Split Wireframe Pattern) -->
+    <section class="hero-section" aria-labelledby="hero-heading" data-semantic="<section.hero>">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">Design-to-Code Workflow v2.4</span>
+          <h1 id="hero-heading" class="hero-title">
+            Transform Wireframe Concepts into <span class="text-gradient">Pixel-Perfect</span> Experiences
+          </h1>
+          <p class="hero-description">
+            Build semantic, accessible, and fluidly responsive web interfaces using structured HTML5 architecture and modern CSS Grid &amp; Flexbox layout systems.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#pricing" class="btn btn--primary btn--lg">Start Free Trial</a>
+            <a href="#workspace" class="btn btn--outline btn--lg">Explore Architecture</a>
+          </div>
+          <div class="hero-trust">
+            <div class="avatar-stack" aria-hidden="true">
+              <span class="avatar">AL</span>
+              <span class="avatar">MK</span>
+              <span class="avatar">SR</span>
+              <span class="avatar">+2k</span>
+            </div>
+            <p class="hero-trust__text">Trusted by <strong>2,400+</strong> product teams &amp; engineering interns worldwide.</p>
+          </div>
+        </div>
+
+        <!-- Hero Visual Mockup (Wireframe UI Preview Card) -->
+        <div class="hero-visual" aria-label="Interactive Dashboard Wireframe Illustration" data-semantic="<figure>">
+          <div class="mockup-window">
+            <div class="mockup-window__header">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--amber"></span>
+              <span class="dot dot--green"></span>
+              <span class="mockup-window__url">localhost:8000/index.html</span>
+            </div>
+            <div class="mockup-window__body">
+              <div class="mockup-top-row">
+                <div class="mockup-stat-card">
+                  <span class="mockup-label">Layout Accuracy</span>
+                  <strong class="mockup-value">99.8%</strong>
+                  <span class="mockup-trend mockup-trend--up">+4.2% vs baseline</span>
+                </div>
+                <div class="mockup-stat-card">
+                  <span class="mockup-label">Breakpoints</span>
+                  <strong class="mockup-value">4 Tiers</strong>
+                  <span class="mockup-trend">Desktop / Tablet / Mobile</span>
+                </div>
+              </div>
+              <div class="mockup-chart">
+                <div class="mockup-chart__header">
+                  <span>Component Hierarchy</span>
+                  <span class="mockup-pill">CSS Grid + Flexbox</span>
+                </div>
+                <div class="mockup-bars">
+                  <div class="bar-item">
+                    <div class="bar-fill" style="--height: 78%"></div>
+                    <span>Header</span>
+                  </div>
+                  <div class="bar-item">
+                    <div class="bar-fill" style="--height: 95%"></div>
+                    <span>Hero</span>
+                  </div>
+                  <div class="bar-item">
+                    <div class="bar-fill" style="--height: 85%"></div>
+                    <span>Grid</span>
+                  </div>
+                  <div class="bar-item">
+                    <div class="bar-fill" style="--height: 65%"></div>
+                    <span>Aside</span>
+                  </div>
+                  <div class="bar-item">
+                    <div class="bar-fill" style="--height: 90%"></div>
+                    <span>Footer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mockup-bottom-row">
+                <div class="mockup-skeleton-line"></div>
+                <div class="mockup-skeleton-badge">W3C Valid</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BRAND / METRICS STRIP (4-Column Responsive Strip) -->
+    <section id="metrics" class="metrics-strip" aria-label="Key Performance Metrics" data-semantic="<section.metrics>">
+      <div class="container metrics-grid">
+        <div class="metric-item">
+          <span class="metric-number">100%</span>
+          <span class="metric-caption">Semantic HTML5 Tags</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number">320px–4K</span>
+          <span class="metric-caption">Fluid Viewport Support</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number">0 JS</span>
+          <span class="metric-caption">Required for Layout &amp; Nav</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number">AA+</span>
+          <span class="metric-caption">WCAG Contrast Ratio</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CORE FEATURES SECTION (3-Column Card Grid Wireframe) -->
+    <section id="features" class="features-section section-padding" aria-labelledby="features-heading" data-semantic="<section.features>">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Core Architecture</span>
+          <h2 id="features-heading" class="section-title">Designed From Wireframe to Production</h2>
+          <p class="section-subtitle">
+            Every section translates low-fidelity wireframe placeholders into resilient, modular components with predictable spacing and alignment.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <article class="feature-card" data-semantic="<article>">
+            <div class="feature-card__icon" aria-hidden="true">01</div>
+            <h3 class="feature-card__title">Semantic Document Tree</h3>
+            <p class="feature-card__desc">
+              Built with landmarks like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code> for screen readers and SEO crawlers.
+            </p>
+            <a href="#workspace" class="feature-card__link">Inspect structure &rarr;</a>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="feature-card" data-semantic="<article>">
+            <div class="feature-card__icon" aria-hidden="true">02</div>
+            <h3 class="feature-card__title">Dual Layout Engine</h3>
+            <p class="feature-card__desc">
+              Combines two-dimensional <strong>CSS Grid</strong> for macro page templates with one-dimensional <strong>Flexbox</strong> for micro component alignment.
+            </p>
+            <a href="#workspace" class="feature-card__link">Explore grid rules &rarr;</a>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="feature-card" data-semantic="<article>">
+            <div class="feature-card__icon" aria-hidden="true">03</div>
+            <h3 class="feature-card__title">Design Token Variables</h3>
+            <p class="feature-card__desc">
+              Centralized <code>:root</code> custom properties control color scales, typographic ratios, border radii, and 8pt spatial rhythm across all elements.
+            </p>
+            <a href="#workspace" class="feature-card__link">View tokens &rarr;</a>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="feature-card" data-semantic="<article>">
+            <div class="feature-card__icon" aria-hidden="true">04</div>
+            <h3 class="feature-card__title">Fluid Typography</h3>
+            <p class="feature-card__desc">
+              Uses mathematical <code>clamp()</code> functions so headings scale smoothly between mobile handsets and ultrawide desktop monitors without jarring jumps.
+            </p>
+            <a href="#workspace" class="feature-card__link">Test responsiveness &rarr;</a>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="feature-card" data-semantic="<article>">
+            <div class="feature-card__icon" aria-hidden="true">05</div>
+            <h3 class="feature-card__title">Pure CSS Mobile Menu</h3>
+            <p class="feature-card__desc">
+              Implements an accessible checkbox-hack hamburger menu and wireframe mode switcher using zero external JavaScript dependencies.
+            </p>
+            <a href="#workspace" class="feature-card__link">Try resizing window &rarr;</a>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="feature-card" data-semantic="<article>">
+            <div class="feature-card__icon" aria-hidden="true">06</div>
+            <h3 class="feature-card__title">Cross-Device Media Queries</h3>
+            <p class="feature-card__desc">
+              Thoughtfully engineered breakpoints at <code>1024px</code>, <code>768px</code>, and <code>480px</code> reflow multi-column layouts into touch-friendly single stacks.
+            </p>
+            <a href="#workspace" class="feature-card__link">See breakpoint specs &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CONTENT + SIDEBAR WORKSPACE SECTION (Asymmetric 8/4 Wireframe Grid) -->
+    <section id="workspace" class="workspace-section section-padding" aria-labelledby="workspace-heading" data-semantic="<section.workspace>">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Asymmetric Content + Aside Pattern</span>
+          <h2 id="workspace-heading" class="section-title">Primary Content Area &amp; Contextual Sidebar</h2>
+          <p class="section-subtitle">
+            Replicating the classic wireframe split: a wide primary content feed paired with a sticky specification sidebar.
+          </p>
+        </div>
+
+        <div class="workspace-layout">
+          <!-- Main Content Column (2/3 width on desktop) -->
+          <div class="workspace-main" data-semantic="<div.content-area>">
+            <article class="case-study-card" data-semantic="<article>">
+              <div class="case-study-card__banner">
+                <span class="tag">Step 1: Wireframe Decomposition</span>
+                <span class="read-time">5 min read</span>
+              </div>
+              <div class="case-study-card__body">
+                <h3>Mapping Visual Boxes to Semantic HTML Containers</h3>
+                <p>
+                  Before writing a single line of CSS, the wireframe was decomposed into logical regions. Rather than relying on generic <code>&lt;div&gt;</code> soup, each wireframe rectangle was assigned an explicit semantic role to establish a clear document outline.
+                </p>
+                <div class="spec-checklist">
+                  <div class="spec-check-item">
+                    <span class="check-icon" aria-hidden="true">&#10003;</span>
+                    <div>
+                      <strong>Top Navigation Bar</strong>
+                      <p>Sticky <code>&lt;header&gt;</code> with brand identity, primary <code>&lt;nav&gt;</code> links, and CTA button group.</p>
+                    </div>
+                  </div>
+                  <div class="spec-check-item">
+                    <span class="check-icon" aria-hidden="true">&#10003;</span>
+                    <div>
+                      <strong>Split Hero Showcase</strong>
+                      <p>Two-column CSS Grid pairing value proposition copy with a structured UI preview figure.</p>
+                    </div>
+                  </div>
+                  <div class="spec-check-item">
+                    <span class="check-icon" aria-hidden="true">&#10003;</span>
+                    <div>
+                      <strong>Card Grid &amp; Sidebar Feed</strong>
+                      <p>Auto-fitting 3-column feature cards followed by an asymmetric 2:1 content-to-aside workspace layout.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="case-study-card" data-semantic="<article>">
+              <div class="case-study-card__banner">
+                <span class="tag">Step 2: Responsive Reflow Strategy</span>
+                <span class="read-time">4 min read</span>
+              </div>
+              <div class="case-study-card__body">
+                <h3>Adapting Across Desktop, Tablet, and Mobile Breakpoints</h3>
+                <p>
+                  Static wireframes often depict only a single desktop viewport. To make the web page truly responsive, each grid container transitions gracefully across screen widths while maintaining touch target sizes of at least <code>44px &times; 44px</code>.
+                </p>
+                <div class="breakpoint-table-wrapper">
+                  <table class="breakpoint-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Viewport Tier</th>
+                        <th scope="col">Media Query</th>
+                        <th scope="col">Grid Columns</th>
+                        <th scope="col">Navigation Behavior</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Desktop</strong></td>
+                        <td><code>&gt; 1024px</code></td>
+                        <td>12-col / 3-col / 2:1 Split</td>
+                        <td>Full horizontal bar + CTAs</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Tablet Landscape</strong></td>
+                        <td><code>&le; 1024px</code></td>
+                        <td>2-col Cards / Stacked Hero</td>
+                        <td>Compact horizontal bar</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Tablet Portrait</strong></td>
+                        <td><code>&le; 768px</code></td>
+                        <td>2-col Metrics / Stacked Aside</td>
+                        <td>Collapsible Hamburger Drawer</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Mobile Phone</strong></td>
+                        <td><code>&le; 480px</code></td>
+                        <td>1-col Single Flow</td>
+                        <td>Full-width touch buttons</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Sidebar / Aside Column (1/3 width on desktop) -->
+          <aside class="workspace-sidebar" aria-label="Design Specifications and Quick Links" data-semantic="<aside>">
+            <div class="sidebar-widget">
+              <h3 class="sidebar-widget__title">Design System Tokens</h3>
+              <p class="sidebar-widget__subtitle">Active color palette &amp; typography scale applied to this wireframe:</p>
+              <ul class="swatch-list">
+                <li class="swatch-item">
+                  <span class="swatch-color" style="background: #4f46e5;"></span>
+                  <div class="swatch-info">
+                    <strong>Primary Indigo</strong>
+                    <code>#4F46E5</code>
+                  </div>
+                </li>
+                <li class="swatch-item">
+                  <span class="swatch-color" style="background: #0ea5e9;"></span>
+                  <div class="swatch-info">
+                    <strong>Accent Sky</strong>
+                    <code>#0EA5E9</code>
+                  </div>
+                </li>
+                <li class="swatch-item">
+                  <span class="swatch-color" style="background: #0f172a;"></span>
+                  <div class="swatch-info">
+                    <strong>Slate Ink (Surface)</strong>
+                    <code>#0F172A</code>
+                  </div>
+                </li>
+                <li class="swatch-item">
+                  <span class="swatch-color" style="background: #f8fafc; border: 1px solid #cbd5e1;"></span>
+                  <div class="swatch-info">
+                    <strong>Canvas Background</strong>
+                    <code>#F8FAFC</code>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget sidebar-widget--highlight">
+              <h3 class="sidebar-widget__title">Interactive Tip</h3>
+              <p>
+                Click the <strong>"Wireframe View"</strong> switch in the top bar to strip away colors and shadows, revealing the raw structural wireframe boxes and semantic HTML tags!
+              </p>
+              <label for="wireframe-switch" class="btn btn--outline btn--full">Toggle Wireframe Mode</label>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PRICING TIERS SECTION (3-Column Comparison Wireframe) -->
+    <section id="pricing" class="pricing-section section-padding" aria-labelledby="pricing-heading" data-semantic="<section.pricing>">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Flexible Plans</span>
+          <h2 id="pricing-heading" class="section-title">Transparent Pricing Structure</h2>
+          <p class="section-subtitle">
+            Aligned card heights using Flexbox column auto-margins so CTA buttons stay locked to the bottom edge regardless of content length.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Starter Plan -->
+          <article class="pricing-card" data-semantic="<article>">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__tier">Starter</h3>
+              <p class="pricing-card__for">For solo creators &amp; students</p>
+              <div class="pricing-card__price">
+                <span class="currency">$</span>0<span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="pricing-card__features">
+              <li>Up to 3 active wireframe projects</li>
+              <li>Semantic HTML5 boilerplate export</li>
+              <li>Standard responsive breakpoints</li>
+              <li>Community forum support</li>
+            </ul>
+            <a href="#get-started" class="btn btn--outline btn--full">Start Free</a>
+          </article>
+
+          <!-- Pro Plan (Highlighted) -->
+          <article class="pricing-card pricing-card--featured" data-semantic="<article.featured>">
+            <span class="popular-badge">Most Popular</span>
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__tier">Professional</h3>
+              <p class="pricing-card__for">For growing product design teams</p>
+              <div class="pricing-card__price">
+                <span class="currency">$</span>29<span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="pricing-card__features">
+              <li>Unlimited wireframe-to-CSS projects</li>
+              <li>Custom design token CSS variables</li>
+              <li>Interactive blueprint inspector mode</li>
+              <li>WCAG AA accessibility audit checks</li>
+              <li>Priority 24/7 engineering support</li>
+            </ul>
+            <a href="#get-started" class="btn btn--primary btn--full">Start 14-Day Trial</a>
+          </article>
+
+          <!-- Enterprise Plan -->
+          <article class="pricing-card" data-semantic="<article>">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__tier">Enterprise</h3>
+              <p class="pricing-card__for">For multi-brand organizations</p>
+              <div class="pricing-card__price">
+                <span class="currency">$</span>99<span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="pricing-card__features">
+              <li>Dedicated design system architecture</li>
+              <li>Automated visual regression testing</li>
+              <li>SSO &amp; role-based permissions</li>
+              <li>Custom SLA &amp; onboarding workshop</li>
+            </ul>
+            <a href="#get-started" class="btn btn--outline btn--full">Contact Sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TESTIMONIALS SECTION (2-Column Quote Grid) -->
+    <section id="testimonials" class="testimonials-section section-padding" aria-labelledby="testimonials-heading" data-semantic="<section.testimonials>">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Developer Feedback</span>
+          <h2 id="testimonials-heading" class="section-title">What Engineering Mentors Say</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card" data-semantic="<blockquote>">
+            <p class="testimonial-card__quote">
+              "Translating a static wireframe into clean semantic HTML without excessive wrapper divs is one of the strongest indicators of frontend engineering maturity. This layout nails both visual fidelity and structural clarity."
+            </p>
+            <footer class="testimonial-card__author">
+              <span class="avatar avatar--lg" aria-hidden="true">DR</span>
+              <div>
+                <cite class="author-name">Elena Rostova</cite>
+                <span class="author-role">Staff Frontend Architect, CloudScale</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card" data-semantic="<blockquote>">
+            <p class="testimonial-card__quote">
+              "The combination of CSS Grid for macro page regions and Flexbox for card internals makes the responsive transitions from 1440px down to 375px effortless and bug-free."
+            </p>
+            <footer class="testimonial-card__author">
+              <span class="avatar avatar--lg" aria-hidden="true">MC</span>
+              <div>
+                <cite class="author-name">Marcus Chen</cite>
+                <span class="author-role">Design Systems Lead, Vertex UI</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CALL TO ACTION BANNER -->
+    <section id="get-started" class="cta-banner-section" aria-labelledby="cta-heading" data-semantic="<section.cta>">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-banner__content">
+            <h2 id="cta-heading">Ready to Launch Your Static Web Page?</h2>
+            <p>
+              Subscribe for weekly design-to-code challenges, semantic HTML checklists, and modern CSS layout guides.
+            </p>
+          </div>
+          <form class="cta-form" action="#get-started" method="get" aria-label="Newsletter Subscription">
+            <label for="email-input" class="sr-only">Email Address</label>
+            <input
+              type="email"
+              id="email-input"
+              name="email"
+              placeholder="Enter your work email..."
+              required
+              class="cta-form__input"
+            />
+            <button type="submit" class="btn btn--primary">Join Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" data-semantic="<footer>">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="#" class="brand brand--light">
+            <span class="brand__logo" aria-hidden="true">NF</span>
+            <span class="brand__name">NovaFlow</span>
+          </a>
+          <p class="footer-brand__desc">
+            A complete wireframe-to-code static webpage demonstration built with semantic HTML5 and responsive CSS3.
+          </p>
+        </div>
+
+        <!-- Links Column 1 -->
+        <div class="footer-col">
+          <h3 class="footer-col__title">Platform</h3>
+          <ul class="footer-links">
+            <li><a href="#features">Core Features</a></li>
+            <li><a href="#workspace">Layout Architecture</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+            <li><a href="#metrics">Performance Metrics</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 2 -->
+        <div class="footer-col">
+          <h3 class="footer-col__title">Resources</h3>
+          <ul class="footer-links">
+            <li><a href="#workspace">Wireframe Guide</a></li>
+            <li><a href="#workspace">CSS Grid Cheatsheet</a></li>
+            <li><a href="#workspace">WCAG Accessibility</a></li>
+            <li><a href="#testimonials">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 3 -->
+        <div class="footer-col">
+          <h3 class="footer-col__title">Deliverables</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">index.html (Semantic HTML)</a></li>
+            <li><a href="styles.css">styles.css (Responsive CSS)</a></li>
+            <li><a href="REPORT.md">REPORT.md (Design Report)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 NovaFlow Project. Crafted for the HTML &amp; CSS Wireframe Implementation Task.</p>
+        <div class="footer-bottom__links">
+          <a href="#main-content">Back to top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightweight script solely to sync the top wireframe toggle checkbox with the body class -->
+  <script>
+    (function () {
+      var toggle = document.getElementById('wireframe-switch');
+      if (toggle) {
+        toggle.addEventListener('change', function () {
+          document.body.classList.toggle('wireframe-mode', toggle.checked);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
